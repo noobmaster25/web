@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Reglas generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos del cuerpo */
+body {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 200;
+    background-image: linear-gradient(to top, #051937, #0b214b, #182860, #292e74, #3e3387);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilos del contenedor principal */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+
+/* Estilos de la barra de navegación */
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    z-index: 100;
+}
+
+.nav-logo p {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.link:hover, .active {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-button .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#registerBtn {
+    margin-left: 15px;
+}
+
+.btn.white-btn {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.btn.btn.white-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-menu-btn {
+    display: none;
+}
+
+/* Estilos de gráficos */
+main {
+    /* margin-top: 3rem; */
+    max-width: 1300px;
+    margin: 5rem auto;
+    
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+hr {
+    border-color: white;
+    margin: 10px 0;
+}
+
+figure, canvas {
+    background-color: rgba(255, 255, 255, .03);
+    padding: 10px 10px 30px;
+}
+
+canvas {
+    width: 99%;
+}
+
+/* Sistema de grid */
+[class*='cols'] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.cols-1 > * {
+    width: 100%;
+    margin: 10px;
+}
+
+.cols-2 > * {
+    width: 49%;
+    margin:auto;
+    margin: 10px
+}
+
+/* Estilos de tabla y paginación */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-table {
+    position: relative;
+    width: 95%;
+    height: 70%;
+    color: #fff;
+}
+
+.box-content-table {
+    height: 90%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(184, 183, 183, 0.568) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 90%;
+    background: #ffffff1c;
+    backdrop-filter: blur(6px);
+}
+
+.table {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table caption {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+
+.table thead {
+    border-bottom: 1px solid #fff;
+}
+
+.table thead td {
+    font-weight: 600;
+}
+
+.table th, td {
+    padding: 10px 0px;
+    width: 25%;
+}
+
+.table tbody tr {
+    border-bottom: 4px solid #ffffff15;
+}
+
+
+.table tbody tr:hover {
+    background: #00000038;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.pagination button {
+    padding: 6px;
+}
+
+.pagination ul {
+    padding: 0 10px;
+}
+
+.pagination ul li {
+    color: black;
+    display: inline-block;
+    background: #f8f2f2;
+    padding: 4px 14px;
+    border-radius: 30%;
+    text-align: center;
+    font-weight: 300;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.pagination ul li.active {
+    background: #5036c4de;
+    color: #fff;
+}
+
+.loader {
+    position: absolute;
+    z-index: 3;
+}
+
+/* Estilos responsivos */
+@media (max-width: 750px) {
+    main {
+        margin-top: 7rem;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    [class*='cols'] {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cols-2 > * {
+        width: 100%;
+    }
+
+    /* Estilos de tabla y paginación en dispositivos móviles */
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    main h1 {
+        text-align: center;
+        font-weight: 100;
+    }
+
+    .container {
+        margin-top: 5rem;
+        height: auto;
+    }
+
+    .table caption {
+        font-size: 18px;
+    }
+
+    .box-table {
+        margin: 20px auto;
+    }
+
+    .blur {
+        display: none;
+    }
+
+    .table {
+        position: relative;
+        border: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        margin-bottom: 8px;
+        border-bottom: 8px solid #8f8f8f56;
+        display: block;
+        padding: 0 20px;
+    }
+
+    .table th, .table td {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .table td {
+        display: block;
+        border-bottom: 1px solid #dddddd7c;
+        text-align: right;
+    }
+
+    .table td:last-child {
+        border-bottom: 15px;
+    }
+
+    .table tr:last-child {
+        border-bottom: 0px;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        font-size: 10px;
+        text-transform: uppercase;
+        float: left;
+    }
+
+    .paginacion {
+        margin-top: 15px;
+    }
+
+    .paginacion ul li {
+        padding: 2px 10px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paginacion</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-logo">
+        <p>LOGO .</p>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="./graficos.html" class="link">Graficos</a></li>
+          <li><a href="./paginacion.html" class="link">Paginación</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="box-table">
+        <div class="box-content-table">
+          <div class="blur"></div>
+          <table class="table">
+            <caption>
+              Productos
+            </caption>
+            <thead>
+              <tr>
+                <th>nombre</th>
+                <th>precio</th>
+                <th>stock</th>
+                <th>categoría</th>
+              </tr>
+            </thead>
+            <tbody class="content-products"></tbody>
+          </table>
+        </div>
+        <div class="pagination"></div>
+      </div>
+      <img class="loader" src="/assets/loader.svg" alt="loader" />
+    </main>
+    <script type="module" src="/js/pagination.js"></script>
+  </body>
+</html>

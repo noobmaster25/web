@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graficando</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-logo">
+        <p>LOGO .</p>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="./graficos.html" class="link">Graficos</a></li>
+          <li><a href="./paginacion.html" class="link">Paginación</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <h1>Graficando datos</h1>
+      <hr />
+
+      <section class="cols-2">
+        <figure>
+          <h2>categorías</h2>
+          <canvas id="donaChart"></canvas>
+        </figure>
+
+        <figure>
+          <h2>Precio por articulo</h2>
+          <canvas id="radarChart"></canvas>
+        </figure>
+      </section>
+      <section class="col-1">
+        <figure>
+          <h2>categorías</h2>
+          <canvas id="lineaChart"></canvas>
+        </figure>
+      </section>
+    </main>
+    <!-- libreria -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="/js/charts.js" type="module"></script>
+  </body>
+</html>
